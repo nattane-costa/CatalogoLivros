@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de Livros</title>
+    <link rel="stylesheet" href="style-catalogoLivros.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Catálogo de Livros</h1>
+    </header>
+
+    <main>
+      <section id="formulario">
+        <h2>Adicionar Livro</h2>
+        <input type="text" id="titulo" placeholder="Título do Livro" />
+        <input type="text" id="autor" placeholder="Autor" />
+        <button onclick="adicionarLivro()" id="bnt-add">Adicionar</button>
+      </section>
+      <hr />
+      <section id="catalogo">
+        <h2>Lista de Livros</h2>
+        <div id="lista-livros"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 - Catálogo de Livros</p>
+    </footer>
+
+    <script src="script-catalagoLivros.js"></script>
+  </body>
+</html>

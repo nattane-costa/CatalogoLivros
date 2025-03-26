@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #28a745;
+  height: 60px;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+main {
+  max-width: 600px;
+  min-height: calc(
+    100vh - 200px
+  ); /*60 header + 40 footer + 10*2 do padding header + 20 *2 do padding main + 20 * margin main = 200px*/
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+#formulario {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 80%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#bnt-add {
+  width: 83%;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#lista-livros {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.livro {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.livro h3 {
+  margin: 0 0 5px;
+}
+
+.livro p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+  color: #015715;
+  height: 40px;
+  bottom: 0;
+}
